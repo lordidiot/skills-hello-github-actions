@@ -1,0 +1,204 @@
+.section {
+  padding: 80px 0;
+}
+
+.container {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 0 24px;
+}
+
+.sectionHeader {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 32px;
+}
+
+.title {
+  font-size: 32px;
+  font-weight: 700;
+  color: var(--okx-white);
+  letter-spacing: -0.02em;
+}
+
+.viewAll {
+  font-size: 14px;
+  font-weight: 500;
+  color: var(--okx-blue);
+  transition: color 0.15s;
+}
+
+.viewAll:hover {
+  color: var(--okx-blue-hover);
+}
+
+.tabs {
+  display: flex;
+  gap: 4px;
+  margin-bottom: 24px;
+  border-bottom: 1px solid var(--okx-border);
+  padding-bottom: 0;
+  overflow-x: auto;
+  scrollbar-width: none;
+}
+
+.tabs::-webkit-scrollbar {
+  display: none;
+}
+
+.tab {
+  padding: 10px 20px;
+  font-size: 14px;
+  font-weight: 500;
+  color: var(--okx-gray-500);
+  border-radius: 8px 8px 0 0;
+  white-space: nowrap;
+  transition: color 0.15s, background-color 0.15s;
+  border-bottom: 2px solid transparent;
+  margin-bottom: -1px;
+}
+
+.tab:hover {
+  color: var(--okx-white);
+  background-color: var(--okx-surface);
+}
+
+.tabActive {
+  color: var(--okx-white);
+  border-bottom-color: var(--okx-white);
+}
+
+.tableWrapper {
+  overflow-x: auto;
+  border-radius: 16px;
+  border: 1px solid var(--okx-border);
+}
+
+.table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.th {
+  padding: 14px 16px;
+  font-size: 12px;
+  font-weight: 600;
+  color: var(--okx-gray-500);
+  text-align: left;
+  background-color: var(--okx-surface);
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  white-space: nowrap;
+}
+
+.th.right {
+  text-align: right;
+}
+
+.row {
+  border-top: 1px solid var(--okx-border);
+  transition: background-color 0.15s;
+}
+
+.row:hover {
+  background-color: var(--okx-surface);
+}
+
+.td {
+  padding: 16px;
+  font-size: 14px;
+  color: var(--okx-white);
+  white-space: nowrap;
+}
+
+.td.right {
+  text-align: right;
+}
+
+.rank {
+  color: var(--okx-gray-500);
+  font-size: 13px;
+}
+
+.assetName {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.coinIcon {
+  width: 36px;
+  height: 36px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 14px;
+  font-weight: 700;
+  color: white;
+  flex-shrink: 0;
+}
+
+.assetSymbol {
+  font-weight: 600;
+  font-size: 14px;
+}
+
+.assetFullName {
+  font-size: 12px;
+  color: var(--okx-gray-500);
+  margin-top: 2px;
+}
+
+.price {
+  font-weight: 600;
+}
+
+.positive {
+  color: var(--okx-green);
+  font-weight: 600;
+}
+
+.negative {
+  color: var(--okx-red);
+  font-weight: 600;
+}
+
+.muted {
+  color: var(--okx-gray-300);
+}
+
+.tradeBtn {
+  display: inline-block;
+  padding: 7px 16px;
+  font-size: 13px;
+  font-weight: 600;
+  color: var(--okx-white);
+  background-color: transparent;
+  border: 1px solid var(--okx-border);
+  border-radius: 8px;
+  transition: background-color 0.15s, border-color 0.15s;
+  white-space: nowrap;
+}
+
+.tradeBtn:hover {
+  background-color: var(--okx-blue);
+  border-color: var(--okx-blue);
+}
+
+@media (max-width: 1024px) {
+  .hideMedium {
+    display: none;
+  }
+}
+
+@media (max-width: 640px) {
+  .hideSmall {
+    display: none;
+  }
+
+  .title {
+    font-size: 24px;
+  }
+}

@@ -1,0 +1,164 @@
+.header {
+  position: sticky;
+  top: 0;
+  z-index: 100;
+  background-color: rgba(0, 0, 0, 0.9);
+  backdrop-filter: blur(12px);
+  border-bottom: 1px solid var(--okx-border);
+}
+
+.inner {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 0 24px;
+  height: 64px;
+  display: flex;
+  align-items: center;
+  gap: 32px;
+}
+
+.logo {
+  flex-shrink: 0;
+  display: flex;
+  align-items: center;
+}
+
+.nav {
+  display: flex;
+  align-items: center;
+  gap: 4px;
+  flex: 1;
+}
+
+.navLink {
+  display: flex;
+  align-items: center;
+  gap: 4px;
+  padding: 6px 12px;
+  font-size: 14px;
+  font-weight: 500;
+  color: var(--okx-gray-300);
+  border-radius: 6px;
+  transition: color 0.15s, background-color 0.15s;
+  white-space: nowrap;
+}
+
+.navLink:hover {
+  color: var(--okx-white);
+  background-color: var(--okx-surface);
+}
+
+.actions {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  flex-shrink: 0;
+}
+
+.loginBtn {
+  padding: 8px 16px;
+  font-size: 14px;
+  font-weight: 500;
+  color: var(--okx-white);
+  border-radius: 8px;
+  transition: background-color 0.15s;
+}
+
+.loginBtn:hover {
+  background-color: var(--okx-surface);
+}
+
+.signupBtn {
+  padding: 8px 16px;
+  font-size: 14px;
+  font-weight: 500;
+  color: var(--okx-black);
+  background-color: var(--okx-white);
+  border-radius: 8px;
+  transition: background-color 0.15s, color 0.15s;
+}
+
+.signupBtn:hover {
+  background-color: var(--okx-gray-200);
+}
+
+.downloadBtn {
+  padding: 8px 16px;
+  font-size: 14px;
+  font-weight: 500;
+  color: var(--okx-white);
+  border: 1px solid var(--okx-border);
+  border-radius: 8px;
+  transition: border-color 0.15s, background-color 0.15s;
+}
+
+.downloadBtn:hover {
+  border-color: var(--okx-gray-500);
+  background-color: var(--okx-surface);
+}
+
+.hamburger {
+  display: none;
+  flex-direction: column;
+  gap: 5px;
+  padding: 8px;
+  margin-left: auto;
+}
+
+.hamburger span {
+  display: block;
+  width: 22px;
+  height: 2px;
+  background-color: var(--okx-white);
+  border-radius: 2px;
+  transition: transform 0.2s;
+}
+
+.mobileMenu {
+  display: none;
+  flex-direction: column;
+  padding: 16px 24px 24px;
+  border-top: 1px solid var(--okx-border);
+  background-color: var(--okx-black);
+}
+
+.mobileLink {
+  padding: 12px 0;
+  font-size: 16px;
+  font-weight: 500;
+  color: var(--okx-gray-300);
+  border-bottom: 1px solid var(--okx-border);
+}
+
+.mobileLink:hover {
+  color: var(--okx-white);
+}
+
+.mobileActions {
+  display: flex;
+  gap: 12px;
+  margin-top: 20px;
+}
+
+.mobileActions .signupBtn {
+  flex: 1;
+  text-align: center;
+}
+
+@media (max-width: 1024px) {
+  .nav {
+    display: none;
+  }
+
+  .actions {
+    display: none;
+  }
+
+  .hamburger {
+    display: flex;
+  }
+
+  .mobileMenu {
+    display: flex;
+  }
+}
