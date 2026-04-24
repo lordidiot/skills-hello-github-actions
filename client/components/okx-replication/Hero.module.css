@@ -1,0 +1,286 @@
+.hero {
+  padding: 80px 0 100px;
+  overflow: hidden;
+}
+
+.container {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 0 24px;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 80px;
+  align-items: center;
+}
+
+.content {
+  max-width: 560px;
+}
+
+.badge {
+  display: inline-block;
+  padding: 6px 14px;
+  font-size: 12px;
+  font-weight: 600;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+  color: var(--okx-blue);
+  background-color: rgba(61, 132, 255, 0.1);
+  border: 1px solid rgba(61, 132, 255, 0.2);
+  border-radius: 100px;
+  margin-bottom: 24px;
+}
+
+.heading {
+  font-size: clamp(40px, 5vw, 64px);
+  font-weight: 800;
+  line-height: 1.1;
+  letter-spacing: -0.03em;
+  margin-bottom: 20px;
+  color: var(--okx-white);
+}
+
+.highlight {
+  background: linear-gradient(135deg, #3d84ff, #00c087);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+.subheading {
+  font-size: 18px;
+  font-weight: 400;
+  color: var(--okx-gray-300);
+  line-height: 1.6;
+  margin-bottom: 36px;
+}
+
+.signupForm {
+  display: flex;
+  gap: 12px;
+  margin-bottom: 48px;
+}
+
+.emailInput {
+  flex: 1;
+  padding: 14px 16px;
+  font-size: 15px;
+  color: var(--okx-white);
+  background-color: var(--okx-surface);
+  border: 1px solid var(--okx-border);
+  border-radius: 10px;
+  outline: none;
+  transition: border-color 0.15s;
+  min-width: 0;
+}
+
+.emailInput::placeholder {
+  color: var(--okx-gray-500);
+}
+
+.emailInput:focus {
+  border-color: var(--okx-blue);
+}
+
+.getStartedBtn {
+  padding: 14px 24px;
+  font-size: 15px;
+  font-weight: 600;
+  color: var(--okx-black);
+  background-color: var(--okx-white);
+  border-radius: 10px;
+  white-space: nowrap;
+  transition: background-color 0.15s, transform 0.1s;
+}
+
+.getStartedBtn:hover {
+  background-color: var(--okx-gray-200);
+  transform: translateY(-1px);
+}
+
+.getStartedBtn:active {
+  transform: translateY(0);
+}
+
+.stats {
+  display: flex;
+  align-items: center;
+  gap: 32px;
+}
+
+.stat {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+
+.statValue {
+  font-size: 24px;
+  font-weight: 700;
+  color: var(--okx-white);
+}
+
+.statLabel {
+  font-size: 13px;
+  color: var(--okx-gray-500);
+}
+
+.statDivider {
+  width: 1px;
+  height: 40px;
+  background-color: var(--okx-border);
+}
+
+/* Visual / Trading Card */
+.visual {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.tradingCard {
+  background: linear-gradient(135deg, var(--okx-surface) 0%, #0d1117 100%);
+  border: 1px solid var(--okx-border);
+  border-radius: 20px;
+  padding: 28px;
+  width: 320px;
+  box-shadow: 0 20px 60px rgba(0, 0, 0, 0.5);
+}
+
+.cardHeader {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 8px;
+}
+
+.pair {
+  font-size: 15px;
+  font-weight: 600;
+  color: var(--okx-gray-300);
+}
+
+.price {
+  font-size: 28px;
+  font-weight: 700;
+  color: var(--okx-white);
+  margin-bottom: 16px;
+}
+
+.miniChart {
+  height: 80px;
+  margin-bottom: 20px;
+}
+
+.miniChart svg {
+  width: 100%;
+  height: 100%;
+}
+
+.cardStats {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 8px;
+  padding-top: 16px;
+  border-top: 1px solid var(--okx-border);
+}
+
+.cardStatLabel {
+  font-size: 11px;
+  color: var(--okx-gray-500);
+  margin-bottom: 4px;
+}
+
+.cardStatValue {
+  font-size: 13px;
+  font-weight: 600;
+  color: var(--okx-white);
+}
+
+.positiveChange {
+  font-size: 13px;
+  font-weight: 600;
+  color: var(--okx-green);
+}
+
+.negativeChange {
+  font-size: 13px;
+  font-weight: 600;
+  color: var(--okx-red);
+}
+
+/* Floating cards */
+.floatingCard1,
+.floatingCard2 {
+  position: absolute;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  padding: 12px 16px;
+  background: var(--okx-surface-2);
+  border: 1px solid var(--okx-border);
+  border-radius: 12px;
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.4);
+}
+
+.floatingCard1 {
+  top: -20px;
+  right: -20px;
+}
+
+.floatingCard2 {
+  bottom: -20px;
+  left: -20px;
+}
+
+.floatCoin {
+  font-size: 13px;
+  font-weight: 700;
+  color: var(--okx-white);
+  min-width: 32px;
+}
+
+.floatValue {
+  font-size: 13px;
+  font-weight: 600;
+  color: var(--okx-white);
+}
+
+@media (max-width: 1024px) {
+  .container {
+    grid-template-columns: 1fr;
+    gap: 60px;
+  }
+
+  .content {
+    max-width: 100%;
+  }
+
+  .visual {
+    justify-content: center;
+  }
+}
+
+@media (max-width: 640px) {
+  .hero {
+    padding: 48px 0 64px;
+  }
+
+  .signupForm {
+    flex-direction: column;
+  }
+
+  .stats {
+    gap: 20px;
+  }
+
+  .statValue {
+    font-size: 20px;
+  }
+
+  .floatingCard1,
+  .floatingCard2 {
+    display: none;
+  }
+}
